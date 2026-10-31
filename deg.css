@@ -396,3 +396,96 @@ right: -75%;
 }
 
 }
+
+/* Make sizing predictable */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Make headings responsive */
+.welcome {
+    font-size: clamp(30px, 6vw, 100px);
+}
+
+.weapon {
+    font-size: clamp(28px, 4.5vw, 70px);
+}
+
+.nh {
+    font-size: clamp(32px, 5vw, 80px);
+}
+
+.res {
+    font-size: clamp(28px, 6vw, 100px);
+}
+
+/* Keep buttons flexible */
+.weap {
+    width: min(25vw, 200px);
+    aspect-ratio: 1;
+    height: auto;
+    font-size: clamp(22px, 3vw, 50px);
+}
+
+.play {
+    width: min(40vw, 160px);
+}
+
+.sel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Center Play Again on every screen */
+.pa {
+    display: block;
+    width: min(85%, 350px);
+    margin: 25px auto;
+}
+
+/* Battle layout */
+.battle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hand {
+    width: clamp(70px, 16vw, 200px);
+    height: clamp(70px, 16vw, 200px);
+    font-size: clamp(35px, 8vw, 100px);
+    flex-shrink: 1;
+}
+
+.pl {
+    font-size: clamp(18px, 3vw, 50px);
+}
+
+.vs {
+    font-size: clamp(22px, 6vw, 100px);
+    margin: 0 10px;
+}
+
+/* Prevent content from exceeding screen width */
+#home,
+#next {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
