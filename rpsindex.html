@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>my game</title>
+  <link rel="stylesheet" href="deg.css">
+</head>
+<body>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+  <div class="cloud cloud5"></div>
+  <div class="cloud cloud6"></div>
+  
+<div id="home">
+<h1 class="welcome">Welcome Again!🤟</h1> 
+<p><h2 class="weapon">select your weapon ⚔️</h2></p>
+<div class="sel">
+    <button class="weap"  onclick="selectWeapon('rock')">✊<br> rock</button> 
+     <button class="weap"    onclick="selectWeapon('paper')">🖐<br>paper</button> 
+     <button class="weap"   onclick="selectWeapon('scissor')">✌<br>scissor</button>
+</div>
+<h3 id="choice"></h5>
+<br>
+<div class="pb"><button class="play" onclick="start()">play</button></div>
+</div>
+
+<div class="cloud-transition">
+    <div class="left-cloud">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+ </div>
+    <div class="right-cloud">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span></div>
+</div>
+
+<div id="next" style="display: none;" >
+  <h1 class="nh">Battle Time! ⚔️</h1>
+  
+  <div class="battle">
+    <div class="player">
+    <div id="playerhand" class="hand"></div>
+    <h2 class="pl">You</h2>
+  </div>
+    <h2 class="vs">V/S</h2>
+    <div class="comp">
+     <div id="comphand" class="hand "></div>
+     <h2 class="pl">Computer</h2>
+     </div>
+  </div>
+
+  <h2 id="result" class="res"></h2>
+
+  <button class="pa" onclick="playagain()">Play Again <span class="arrow">↻</span></button>
+</div>
+
+<script src="log.js"></script>
+</body>
+
+
+</html>
