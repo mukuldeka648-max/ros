@@ -20,7 +20,7 @@ function start()
 
       setTimeout(function(){
           document.getElementById("home").style.display="none";
-          document.getElementById("next").style.display="block";
+          document.getElementById("next").style.display="flex";
       },1000); 
 
       setTimeout(function(){
@@ -62,7 +62,7 @@ function start()
         clouds.classList.add("active");
    setTimeout(function(){
     document.getElementById("next").style.display = "none";
-    document.getElementById("home").style.display = "block";
+    document.getElementById("home").style.display = "flex";
      player = "";
     document.getElementById("choice").innerText="";
    },1000);
